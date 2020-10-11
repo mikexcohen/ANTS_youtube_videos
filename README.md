@@ -4,6 +4,9 @@ Each folder here corresponds to one of the playlists on my youtube channel: http
 
 ## How to use these code files
 Go to my [YouTube channel](https://www.youtube.com/channel/UCUR_LsXk7IYyueSnXcNextQ) and look for the playlists called "OLD ANTS #x)". The files used in those videos are inside the folder here with the corresponding name. (The file called sampleEEGdata.mat is used in many sections and is in the main directory.)
+
+Rather than downloading files one at a time, it's probably easier to download the zip of all files (click on the green "Code" bottom above and then "Download ZIP"), or clone the repository if you are already familiar with github.
+
 ### About these lectures
 These recordings were my first attempts at filming educational videos at home (most were recorded in 2015). The audiovisual quality is shamefully, embarrassingly crappy. I had a cheap setup and didn't know what I was doing. And the font size of the code is too small.
 
