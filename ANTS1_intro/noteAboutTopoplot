@@ -1,0 +1,5 @@
+In the video I use an eeglab function called topoplot.m
+
+This function is available in the eeglab toolbox, which is free to download and install. 
+
+If you don't want to install eeglab, use the function topoplotIndie instead.
