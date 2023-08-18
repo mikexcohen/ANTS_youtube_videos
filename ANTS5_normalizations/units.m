@@ -96,7 +96,7 @@ cmwX  = fft(cmw,nConv);
 sigX  = fft(signal,nConv);
 
 % step 1: max-value normalize the wavelet in the frequency domain
-cmwX  = cmwX./max(cmwX);
+cmwX  = cmwX./max(abs(cmwX));
 
 % convolution
 asX   = ifft( cmwX.*sigX );
