@@ -44,7 +44,7 @@ for fi=1:num_frex
     s       =  % frequency-normalized width of Gaussian
     cmw      = exp(1i*2*pi*frex(fi).*wavtime) .* exp( (-wavtime.^2) ./ (2*s^2) );
     tempX     = fft(cmw,nConv);
-    cmwX(fi,:) = tempX ./ max(tempX);
+    cmwX(fi,:) = tempX ./ max(abs(tempX));
 end
 
 %% run convolution to extract tf power
