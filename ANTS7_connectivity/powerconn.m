@@ -73,7 +73,7 @@ for chani=1:2
         % (does this need to be computed here inside this double-loop?)
         wavelet  = exp(2*1i*pi*frex(fi).*wavtime) .* exp(-wavtime.^2./(2*s(fi)^2));
         waveletX = fft(wavelet,nConv);
-        waveletX = waveletX ./ max(waveletX);
+        waveletX = waveletX ./ max(abs(waveletX));
         
         % now run convolution in one step
         as = ifft(waveletX .* dataX);
