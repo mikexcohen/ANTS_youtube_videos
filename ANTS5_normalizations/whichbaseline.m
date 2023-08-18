@@ -56,7 +56,7 @@ for fi=1:length(frex)
     % create wavelet and get its FFT
     wavelet  = exp(2*1i*pi*frex(fi).*wavtime) .* exp(-wavtime.^2./(2*s(fi)^2));
     waveletX = fft(wavelet,nConv);
-    waveletX = waveletX ./ max(waveletX);
+    waveletX = waveletX ./ max(abs(waveletX));
     
     % now run convolution in one step
     as = ifft(waveletX .* dataX);
