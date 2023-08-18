@@ -178,7 +178,7 @@ phase_data = zeros(2,EEG.pnts,EEG.trials);
 
 % FFT of wavelet (need to redo FFT because different n_conv)
 waveletX = fft(wavelet,n_conv);
-waveletX = waveletX ./ max(waveletX);
+waveletX = waveletX ./ max(abs(waveletX));
 
 
 % analytic signal of channel 1
